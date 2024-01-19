@@ -4,7 +4,7 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    font-family: "Poppins", sans-serif;
+    font-family: Arial, Helvetica, sans-serif;
 }
 
 body{
@@ -40,7 +40,7 @@ body{
     position: relative;
     font-size: 15px;
     color: aliceblue;
-    font-weight: 4;
+    font-weight: 20;
     text-decoration: none;
     margin-left: 20px;
 
