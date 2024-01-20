@@ -65,7 +65,7 @@ body{
     align-items: center;
     justify-content: center;
     overflow: hidden;
-    background: rgb(0, 0, 0, 0.6);
+    background: rgb(0, 0, 0, 0.5);
     /* background-image: linear-gradient(90deg, rgba(255, 0, 0, 0.658), rgba(0, 0, 255, 0.700)); */
 }
 
@@ -73,19 +73,17 @@ body{
     text-align: center;
     font-size: 30px;
     font-family: poppins;
-    padding: 20px;
-    margin: 20px;
     z-index: 1;
-    background: rgb(255, 255, 255, 0.3);
+    color: white;
+    /* background: rgb(255, 255, 255, 0.3); */
 }
 
 .section h3{
     text-align: center;
+    color: white;
     font-family: poppins;
-    padding: 20px;
-    margin: 20px;
     z-index: 1;
-    background: rgb(255, 255, 255, 0.3);
+    /* background: rgb(255, 255, 255, 0.3); */
 }
 
 .section btn-header-book{
@@ -118,5 +116,31 @@ body{
     text-align: center;
     padding: 20px;
 }
+
+.booking-header{
+    background: #6C8DE1;
+    background-image: url('../assets/images/sigiriya.jpg'); 
+    background-size: cover; 
+    background-position: top;
+    background-repeat: no-repeat;
+}
+
+.booking-header h1{
+    background-color: #6CB7E1;
+    text-align: center;
+    padding: 20px;
+}
+
+.booking-form{
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.booking-text{
+    background: rgba(255, 255, 255, 0.3);
+    padding: 20px;
+    border-radius: 3%;
+}
+
 
 
