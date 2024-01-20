@@ -20,14 +20,12 @@ body{
     justify-content: space-between;
     align-items: center;
     z-index: 100;
-
 }
 
 .logo img{
     width: 218px;
     height: 150px; 
     object-fit: cover;
-
 }
 
 .navbar a {
@@ -37,7 +35,6 @@ body{
     font-weight: 20;
     text-decoration: none;
     margin-left: 20px;
-
 }
 
 .navbar a::before {
@@ -148,5 +145,54 @@ body{
     border-radius: 3%;
 }
 
+.service-header{
+    background: #6C8DE1;
+}
 
+.service-header h1{
+    background-color: #6CB7E1;
+    text-align: center;
+    padding: 20px;
+}
+
+.gallery-header{
+    background: #6C8DE1;
+}
+
+.gallery-header h1{
+    background-color: #6CB7E1;
+    text-align: center;
+    padding: 20px;
+}
+
+.gallery-content h1{
+    background-color: #6CB7E1;
+    text-align: center;
+    padding: 20px;
+}
+
+.aboutus-header{
+    background: #6C8DE1;
+}
+
+.aboutus-header h1{
+    background-color: #6CB7E1;
+    text-align: center;
+    padding: 20px;
+}
+
+.newsletter-header{
+    background: #6C8DE1;
+}
+
+.newsletter-header h1{
+    background-color: #6CB7E1;
+    text-align: center;
+    padding: 20px;
+}
+
+.footer{
+    background: #000000;
+    color: #fff;
+}
 
