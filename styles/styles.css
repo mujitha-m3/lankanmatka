@@ -120,6 +120,79 @@ body{
     padding: 20px;
 }
 
+.popup .overlay{
+    position: fixed;
+    top: 0px;
+    left: 0px;
+    width: 100vw;
+    height: 100vh;
+    background:rgba(0, 0, 0, 0.7);
+    z-index: 1;
+    display: none;
+
+}
+
+.popup .content{
+    position: absolute;
+    top: 70%;
+    left: 50%;
+    transform: translate(-50%,-50%) scale(0);
+    background: #fff;
+    width: 650px;
+    height: 480px;
+    z-index: 2;
+    text-align: left;
+    padding: 20px;
+    box-sizing: border-box;
+    border-radius: 15px;
+
+}
+
+.popup .close-btn{
+    cursor: pointer;
+    position: absolute;
+    right: 20px;
+    top: 20px;
+    width: 30px;
+    height: 30px;
+    background: #222;
+    color: #fff;
+    font-size: 25px;
+    font-weight: 600;
+    line-height: 30px;
+    text-align: center;
+    border-radius: 50%;
+
+}
+
+.popup.active .overlay{
+    display: block;
+
+
+}
+
+.popup.active .content{
+    transition: all 300ms ease-in-out;
+    transform: translate(-50%,-50%) scale(1);
+
+
+}
+
+.popup .content button {
+    display: block;
+    margin-top: 20px; 
+    margin-left: auto; 
+}
+
+.popup .content img {
+    width: 147px; /* Set the width to 100% of the container */
+    height: 95; /* Maintain the aspect ratio */
+    margin-bottom: 10px; /* Add some margin between the images */
+    
+}
+
+
+
 .booking-header{
     background: #6C8DE1;
     background-image: url('../assets/images/sigiriya.jpg'); 
