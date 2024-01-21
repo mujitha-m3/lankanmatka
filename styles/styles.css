@@ -281,7 +281,9 @@ body{
 }
 
 .service-header{
-    background: #969cac;
+    /*background: #969cac;*/
+    background-image: linear-gradient(to right, rgba(136, 157, 186, 0.758), rgb(232, 227, 227));
+      
 }
 
 .service-header h1{
@@ -374,7 +376,8 @@ body{
 }
 }
 .aboutus-header{
-    background: #6C8DE1;
+   /* background: #6C8DE1;*/
+   background-image: linear-gradient(to right, rgba(104, 149, 184, 0.758), rgb(232, 227, 227));
 }
 
 .aboutus-header h1{
