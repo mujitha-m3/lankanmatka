@@ -332,10 +332,36 @@
             </div>
                 <div class="popup-image">
                     <span>&times;</span>
-                    <img src="assets/images/kandy/temple-of-the-sacred.jpg" alt="">
+                    <img src="assets/images/kandy/temple-of-the-sacred.jpg" id="slide" alt="">
+                    <button type="button" class="btn btn-secondary" onclick="mySlide('prev');"><</button>
+                    <button type="button" class="btn btn-secondary" onclick="mySlide('next');">></button>
                 </div>
+               
+                
+            </div> 
 
-            </div> <!--Gallery-->
+            <script>
+            
+                var i = 0,images = ["assets/images/kandy/temple-of-the-sacred.jpg",
+                                    "assets/images/kandy/lake-mob.jpg",
+                                    "assets/images/kandy/Peridenya-Gardens-kandy-sri-lanka1.jpg",
+                                    "assets/images/kandy/istockphoto-169941463-612x612.jpg"];
+                                
+              function mySlide(param)
+              {
+                  if(param === 'next')
+                  {
+                      i++;
+                      if(i === images.length){ i = images.length - 1; }
+                  }else{
+                      i--;
+                      if(i < 0){ i = 0; }
+                  }
+                  
+                  document.getElementById('slide').src = images[i];
+              }
+                
+            </script>
 
             <script>
                 document.querySelectorAll('.image-container img').forEach(image =>{
@@ -351,7 +377,7 @@
 
             </script>
 
-        </section>
+        </section> <!--Gallery-->
 
         <section id="aboutus">
             <!-- about us -->

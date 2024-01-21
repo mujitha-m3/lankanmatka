@@ -146,7 +146,7 @@ body{
     transform: translate(-50%,-50%) scale(0);
     background: #fff;
     width: 650px;
-    height: 480px;
+    height: 440px;
     z-index: 2;
     text-align: left;
     padding: 20px;
@@ -381,6 +381,21 @@ body{
     width: 95%;
 }
 }
+
+div.popup-image button:first-of-type {
+    float: left;
+    margin-top: 300px; /* Adjust the margin value as needed */
+    margin-left: 28%;
+}
+
+div.popup-image button:last-of-type {
+    float: right;
+    margin-top: 300px; /* Adjust the margin value as needed */
+    margin-right: 28%;
+}
+
+
+
 .aboutus-header{
    background-image: linear-gradient(to right, rgba(104, 149, 184, 0.758), rgb(232, 227, 227));
 }
