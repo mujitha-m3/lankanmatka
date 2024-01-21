@@ -193,8 +193,6 @@ body{
     margin-bottom: 10px; 
 }
 
-
-
 .booking-header{
     background: #6C8DE1;
     background-image: url('../assets/images/sigiriya.jpg'); 
@@ -209,15 +207,53 @@ body{
     padding: 20px;
 }
 
-.booking-form{
-    background-repeat: no-repeat;
-    background-size: cover;
+.booking-form form {
+    background: rgba(255, 255, 255, 0.5);
+    padding: 20px;
+    border-radius: 5%;
+    box-shadow: 0 0 10px rgba(4, 209, 255, 0.1);
+    float: right;
+    padding: 20px;
+    width: 400px;
 }
 
-.booking-form{
-    background: rgba(255, 255, 255, 0.3);
-    padding: 20px;
-    border-radius: 3%;
+.booking-form label {
+    display: block;
+    font-weight: bold;
+    margin-bottom: 8px;
+    color: #333;
+}
+
+.booking-form input {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 15px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    box-sizing: border-box;
+}
+
+.booking-form button {
+    background-color: #007bff;
+    color: #fff;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.booking-form button:hover {
+    background-color: #0056b3;
+}
+
+.booking-form button, .booking-form input[type="reset"] {
+    margin-right: 10px;
+}
+
+@media (max-width: 767px) {
+    .booking-form form {
+        padding: 15px;
+    }
 }
 
 .service-header{
