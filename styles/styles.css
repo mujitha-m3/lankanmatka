@@ -118,7 +118,7 @@ body{
 }
 
 .tourPlan{
-    background: #6C8DE1;
+    background-image: linear-gradient(to right, rgba(136, 157, 186, 0.758), rgb(232, 227, 227));
 }
 
 .tourPlan h1{
@@ -255,7 +255,9 @@ body{
     margin-top: 100px;
     font-size: 40px;
     margin-bottom: 0px;
-    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    background: rgba(255, 255, 255, 0.2);
+    border-radius: 5%;
 }
 
 .booking-text h3 {
@@ -263,7 +265,9 @@ body{
     color: white;
     font-size: 40px;
     margin-bottom: 0px;
-    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    background: rgba(255, 255, 255, 0.2);
+    border-radius: 5%;
 }
 
 .booking-text h4 {
@@ -271,7 +275,9 @@ body{
     color: white;
     font-size: 25px;
     margin-top: 0;
-    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    background: rgba(255, 255, 255, 0.2);
+    border-radius: 5%;
 }
 
 @media (max-width: 767px) {
@@ -293,7 +299,7 @@ body{
 }
 
 .gallery-header{
-    background: #6C8DE1;
+    background-image: linear-gradient(to right, rgba(136, 157, 186, 0.758), rgb(232, 227, 227));
 }
 
 .gallery-header h1{
@@ -376,7 +382,6 @@ body{
 }
 }
 .aboutus-header{
-   /* background: #6C8DE1;*/
    background-image: linear-gradient(to right, rgba(104, 149, 184, 0.758), rgb(232, 227, 227));
 }
 
@@ -384,6 +389,14 @@ body{
     background-color: #6CB7E1;
     text-align: center;
     padding: 20px;
+}
+
+.aboutUs-text{
+    margin-left: 20px;
+    font-weight: thin;
+    font-size: 16px;
+    color: black;
+    
 }
 
 .newsletter-header{
