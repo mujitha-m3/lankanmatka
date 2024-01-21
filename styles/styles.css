@@ -250,6 +250,30 @@ body{
     margin-right: 10px;
 }
 
+.booking-text h2 {
+    font-weight: bold;
+    margin-top: 100px;
+    font-size: 40px;
+    margin-bottom: 0px;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif
+}
+
+.booking-text h3 {
+    font-weight: thin;
+    color: white;
+    font-size: 40px;
+    margin-bottom: 0px;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif
+}
+
+.booking-text h4 {
+    font-weight: thin;
+    color: white;
+    font-size: 25px;
+    margin-top: 0;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif
+}
+
 @media (max-width: 767px) {
     .booking-form form {
         padding: 15px;
