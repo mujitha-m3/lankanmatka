@@ -268,51 +268,40 @@
                         <h1>GALLERY</h1>
                     </div>
                 </div>
-                <div class="container gallery-content mt-2 text-left">
-                    <div class="row">
-                        <div class="col-md-4 gallery">
-                            Lorem, ipsum dolor sit amet consectetur adipisicing elit. Expedita quasi aut ea quisquam!
-                            Distinctio cumque velit sit labore odit, aliquid exercitationem est dolorem rem fugiat
-                        </div>
-                        <div class="col-md-4 gallery">
-                            Lorem, ipsum dolor sit amet consectetur adipisicing elit. Expedita quasi aut ea quisquam!
-                            Distinctio cumque velit sit labore odit, aliquid exercitationem est dolorem rem fugiat
-                        </div>
-                        <div class="col-md-4 gallery">
-                            Lorem, ipsum dolor sit amet consectetur adipisicing elit. Expedita quasi aut ea quisquam!
-                            Distinctio cumque velit sit labore odit, aliquid exercitationem est dolorem rem fugiat
-                        </div>
-                    </div>
-                    <div class="row">
-                        <div class="col-md-4 gallery">
-                            Lorem, ipsum dolor sit amet consectetur adipisicing elit. Expedita quasi aut ea quisquam!
-                            Distinctio cumque velit sit labore odit, aliquid exercitationem est dolorem rem fugiat
-                        </div>
-                        <div class="col-md-4 gallery">
-                            Lorem, ipsum dolor sit amet consectetur adipisicing elit. Expedita quasi aut ea quisquam!
-                            Distinctio cumque velit sit labore odit, aliquid exercitationem est dolorem rem fugiat
-                        </div>
-                        <div class="col-md-4 gallery">
-                            Lorem, ipsum dolor sit amet consectetur adipisicing elit. Expedita quasi aut ea quisquam!
-                            Distinctio cumque velit sit labore odit, aliquid exercitationem est dolorem rem fugiat
-                        </div>
-                    </div>
-                    <div class="row">
-                        <div class="col-md-4 gallery">
-                            Lorem, ipsum dolor sit amet consectetur adipisicing elit. Expedita quasi aut ea quisquam!
-                            Distinctio cumque velit sit labore odit, aliquid exercitationem est dolorem rem fugiat
-                        </div>
-                        <div class="col-md-4 gallery">
-                            Lorem, ipsum dolor sit amet consectetur adipisicing elit. Expedita quasi aut ea quisquam!
-                            Distinctio cumque velit sit labore odit, aliquid exercitationem est dolorem rem fugiat
-                        </div>
-                        <div class="col-md-4 gallery">
-                            Lorem, ipsum dolor sit amet consectetur adipisicing elit. Expedita quasi aut ea quisquam!
-                            Distinctio cumque velit sit labore odit, aliquid exercitationem est dolorem rem fugiat
-                        </div>
-                    </div>
+                <div class="row">
+                <div class="image-container">
+                   <div class="image col-md-4"><img src="assets/images/kandy/temple-of-the-sacred.jpg" alt=""></div>
+                   <div class="image col-md-4"><img src="assets/images/kandy/lake-mob.jpg" alt=""></div>
+                   <div class="image col-md-4"><img src="assets/images/kandy/Peridenya-Gardens-kandy-sri-lanka1.jpg" alt=""></div>
+                   <div class="image col-md-4"><img src="assets/images/kandy/istockphoto-169941463-612x612.jpg" alt=""></div>
+                   <div class="image col-md-4"><img src="assets/images/kandy/Temple-Sacred-Tooth-Relic-kandy-sri-lanka.jpg" alt=""></div>
+                   <div class="image col-md-4"><img src="assets/images/kandy/maxresdefault.jpg" alt=""></div>
+                   <div class="col-md-4">
+                    <h4>Kandy</h4>
                 </div>
+                </div>
+            </div>
+                <div class="popup-image">
+                    <span>&times;</span>
+                    <img src="assets/images/kandy/temple-of-the-sacred.jpg" alt="">
+                </div>
+
             </div> <!--Gallery-->
+
+            <script>
+                document.querySelectorAll('.image-container img').forEach(image =>{
+                    image.onclick=()=>{
+                    document.querySelector('.popup-image').style.display='block';
+                    document.querySelector('.popup-image img').src = image.getAttribute('src')
+                }
+                });
+
+                document.querySelector('.popup-image span').onclick = ()=>{
+                    document.querySelector('.popup-image').style.display='none';
+                }
+
+            </script>
+
         </section>
 
         <section id="aboutus">
@@ -439,7 +428,29 @@
             </div> <!--footer-->
         </section>
     </div> <!--container-->
-   
+    <div class="popup" id="popup-1"> <!--Tour Packge Popup-->
+        <div class="overlay"></div>
+            <div class="content">
+                <div class="close-btn" onclick="togglepopup()">&times;</div>
+                <h1>Kandy</h1>
+                <img src="assets/images/trip-plans-card-img/sri-dalada-maligawa.jpg"  >
+                <img src="assets/images/kandy/lake-mob.jpg"  >
+                <img src="assets/images/kandy/Peridenya-Gardens-kandy-sri-lanka1.jpg"  >
+                <img src="assets/images/kandy/istockphoto-169941463-612x612.jpg"  >
+                <h3>Things to do & Package Description</h3>
+                <ul>
+                    <li>Arrival at Colombo Sri Lanka (Bandaranaike International airport).</li>
+                    <li>Enjoy a warm welcome by our Lankan Matka officer and driver at
+                        the airport.</li>
+                    <li>Proceed to the ancient city of Kandy.</li>
+                    <li>Check-in at the antique-style hotel and relax.</li>
+                    <li>Visit to Kandy Temple of tooth.</li>
+                    <li>Visit to Peradeniya Botanical Garden.</li>
+                </ul>
+                <button class="btn btn-primary">Book Now</button>
+            </div>
+
+    </div>
     <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js"
         integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n"
         crossorigin="anonymous"></script>
@@ -450,30 +461,6 @@
         integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6"
         crossorigin="anonymous"></script>
         <script src="script.js"></script>
-        
-        <div class="popup" id="popup-1">
-            <div class="overlay"></div>
-                <div class="content">
-                    <div class="close-btn" onclick="togglepopup()">&times;</div>
-                    <h1>Kandy</h1>
-                    <img src="assets/images/trip-plans-card-img/sri-dalada-maligawa.jpg"  >
-                    <img src="assets/images/kandy/lake-mob.jpg"  >
-                    <img src="assets/images/kandy/Peridenya-Gardens-kandy-sri-lanka1.jpg"  >
-                    <img src="assets/images/kandy/istockphoto-169941463-612x612.jpg"  >
-                    <h3>Things to do & Package Description</h3>
-                    <ul>
-                        <li>Arrival at Colombo Sri Lanka (Bandaranaike International airport).</li>
-                        <li>Enjoy a warm welcome by our Lankan Matka officer and driver at
-                            the airport.</li>
-                        <li>Proceed to the ancient city of Kandy.</li>
-                        <li>Check-in at the antique-style hotel and relax.</li>
-                        <li>Visit to Kandy Temple of tooth.</li>
-                        <li>Visit to Peradeniya Botanical Garden.</li>
-                    </ul>
-                    <button class="btn btn-primary">Book Now</button>
-                </div>
-
-        </div>
         
 </body>
 
