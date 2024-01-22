@@ -316,16 +316,62 @@ body{
 
 .gallery-header .image-container{
     display: flex;
+    width: 340px;
+    height: 275px;
     flex-wrap: wrap;
     gap: 1px;
     justify-content: center;
     padding: 0px;
-    margin-left: -65px;
+    margin-left: -25px;
+    /*border: 2px solid #ddd;*/
 }
 
 .gallery-header .image-container .image{
-    height: 110px;
-    width: 80px;
+    height: 90px;
+    width: 70px;
+    border: 5px solid #fff;
+    box-shadow: 0 5px 15px  rgba(0,0,0,.1);
+    overflow: hidden;
+    cursor: pointer;
+}
+
+
+.gallery-header .image-container2{
+    display: flex;
+    width: 340px;
+    height: 275px;
+    flex-wrap: wrap;
+    gap: 1px;
+    justify-content: center;
+    padding: 0px;
+    /*border: 2px solid #ddd;*/
+    margin-left: -85px;
+}
+
+.gallery-header .image-container2 .image{
+    height: 90px;
+    width: 70px;
+    border: 5px solid #fff;
+    box-shadow: 0 5px 15px  rgba(0,0,0,.1);
+    overflow: hidden;
+    cursor: pointer;
+}
+
+.gallery-header .image-container3{
+    display: flex;
+    width: 340px;
+    height: 275px;
+    flex-wrap: wrap;
+    gap: 1px;
+    justify-content: center;
+    padding: 0px;
+    margin-left: -90px;
+    /*border: 2px solid #ddd;*/
+}
+
+.gallery-header .image-container3 .image{
+    height: 90px;
+    width: 70px;
     border: 5px solid #fff;
     box-shadow: 0 5px 15px  rgba(0,0,0,.1);
     overflow: hidden;
@@ -341,6 +387,28 @@ body{
 }
 
 .gallery-header .image-container .image:hover img{
+    transform: scale(1.1);
+}
+
+.gallery-header .image-container2 .image img{
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+    transition: .2s linear;
+}
+
+.gallery-header .image-container2 .image:hover img{
+    transform: scale(1.1);
+}
+
+.gallery-header .image-container3 .image img{
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+    transition: .2s linear;
+}
+
+.gallery-header .image-container3 .image:hover img{
     transform: scale(1.1);
 }
 
@@ -397,6 +465,7 @@ div.popup-image button:last-of-type {
 
 
 .aboutus-header{
+    margin-top: 30px;
    background-image: linear-gradient(to right, rgba(104, 149, 184, 0.758), rgb(232, 227, 227));
 }
 

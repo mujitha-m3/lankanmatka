@@ -325,62 +325,117 @@
                    <div class="image col-md-4"><img src="assets/images/kandy/istockphoto-169941463-612x612.jpg" alt=""></div>
                    <div class="image col-md-4"><img src="assets/images/kandy/Temple-Sacred-Tooth-Relic-kandy-sri-lanka.jpg" alt=""></div>
                    <div class="image col-md-4"><img src="assets/images/kandy/maxresdefault.jpg" alt=""></div>
-                   <div class="col-md-4">
-                    <h4>Kandy</h4>
+                   <div class="col-md-4"><h4>Kandy</h4>
                 </div>
                 </div>
-            </div>
-            <div class="popup-image">
-                <span>&times;</span>
-                <img src="assets/images/kandy/temple-of-the-sacred.jpg" id="slide" alt="">
-                <button type="button" class="btn btn-secondary" onclick="mySlide('prev');"><</button>
-                <button type="button" class="btn btn-secondary" onclick="mySlide('next');">></button>
-            </div>
-           
-            
-        </div> 
 
-        <script>
-        
-            var i = 0,images = ["assets/images/kandy/temple-of-the-sacred.jpg",
-                                "assets/images/kandy/lake-mob.jpg",
-                                "assets/images/kandy/Peridenya-Gardens-kandy-sri-lanka1.jpg",
-                                "assets/images/kandy/istockphoto-169941463-612x612.jpg",
-                                "assets/images/kandy/Temple-Sacred-Tooth-Relic-kandy-sri-lanka.jpg",
-                                "assets/images/kandy/maxresdefault.jpg"];
-                            
-          function mySlide(param)
-          {
-              if(param === 'next')
-              {
-                  i++;
-                  if(i === images.length){ i = images.length - 1; }
-              }else{
-                  i--;
-                  if(i < 0){ i = 0; }
-              }
-              
-              document.getElementById('slide').src = images[i];
-          }
-            
-        </script>
+                <div class="image-container2">
+                    <div class="image col-md-4"><img src="assets/images/Ella/download (1).jpg" alt=""></div>
+                    <div class="image col-md-4"><img src="assets/images/Ella/download.jpg" alt=""></div>
+                    <div class="image col-md-4"><img src="assets/images/Ella/images (1).jpg" alt=""></div>
+                    <div class="image col-md-4"><img src="assets/images/Ella/images (2).jpg" alt=""></div>
+                    <div class="image col-md-4"><img src="assets/images/Ella/images (3).jpg" alt=""></div>
+                    <div class="image col-md-4"><img src="assets/images/Ella/images.jpg" alt=""></div>
+                    <div class="col-md-4">
+                     <h4>Ella</h4>
+                 </div>
+                 </div>
 
+                 <div class="image-container3">
+                    <div class="image col-md-4"><img src="assets/images/Anuradhapura/istockphoto-1178773962-612x612.jpg" alt=""></div>
+                    <div class="image col-md-4"><img src="assets/images/Anuradhapura/istockphoto-1255135538-612x612.jpg" alt=""></div>
+                    <div class="image col-md-4"><img src="assets/images/Anuradhapura/istockphoto-1292612453-612x612.jpg" alt=""></div>
+                    <div class="image col-md-4"><img src="assets/images/Anuradhapura/istockphoto-471199868-612x612.jpg" alt=""></div>
+                    <div class="image col-md-4"><img src="assets/images/Anuradhapura/istockphoto-485488406-612x612.jpg" alt=""></div>
+                    <div class="image col-md-4"><img src="assets/images/Anuradhapura/istockphoto-513483910-612x612.jpg" alt=""></div>
+                    <div class="col-md-4" style="margin-right: 58px;">
+                     <h4>Anuradhapura</h4>
+                 </div>
+                 </div>
+
+            </div>
+            <div class="popup-image" id="kandyPopup">
+                <span onclick="closePopup('kandyPopup')">&times;</span>
+                <img src="assets/images/kandy/temple-of-the-sacred.jpg" id="kandySlide" alt="">
+                <button type="button" class="btn btn-secondary" onclick="mySlide('prev', 'kandy');"><</button>
+                <button type="button" class="btn btn-secondary" onclick="mySlide('next', 'kandy');">></button>
+            </div>
             
+            <div class="popup-image" id="ellaPopup">
+                <span onclick="closePopup('ellaPopup')">&times;</span>
+                <img src="assets/images/Ella/download (1).jpg" id="ellaSlide" alt="">
+                <button type="button" class="btn btn-secondary" onclick="mySlide('prev', 'ella');"><</button>
+                <button type="button" class="btn btn-secondary" onclick="mySlide('next', 'ella');">></button>
+            </div>
             
             <script>
+                var kandyIndex = 0, ellaIndex = 0;
+                var kandyImages = ["assets/images/kandy/temple-of-the-sacred.jpg",
+                    "assets/images/kandy/lake-mob.jpg",
+                    "assets/images/kandy/Peridenya-Gardens-kandy-sri-lanka1.jpg",
+                    "assets/images/kandy/istockphoto-169941463-612x612.jpg",
+                    "assets/images/kandy/Temple-Sacred-Tooth-Relic-kandy-sri-lanka.jpg",
+                    "assets/images/kandy/maxresdefault.jpg"];
+                var ellaImages = ["assets/images/Ella/download (1).jpg",
+                    "assets/images/Ella/download.jpg",
+                    "assets/images/Ella/images (1).jpg",
+                    "assets/images/Ella/images (2).jpg",
+                    "assets/images/Ella/images (3).jpg",
+                    "assets/images/Ella/images.jpg"];
+            
+                function mySlide(param, album) {
+                    var currentIndex, images;
+                    if (album === 'kandy') {
+                        currentIndex = kandyIndex;
+                        images = kandyImages;
+                    } else if (album === 'ella') {
+                        currentIndex = ellaIndex;
+                        images = ellaImages;
+                    }
+            
+                    if (param === 'next') {
+                        currentIndex++;
+                        if (currentIndex === images.length) { currentIndex = images.length - 1; }
+                    } else {
+                        currentIndex--;
+                        if (currentIndex < 0) { currentIndex = 0; }
+                    }
+            
+                    if (album === 'kandy') {
+                        kandyIndex = currentIndex;
+                        document.getElementById('kandySlide').src = kandyImages[kandyIndex];
+                    } else if (album === 'ella') {
+                        ellaIndex = currentIndex;
+                        document.getElementById('ellaSlide').src = ellaImages[ellaIndex];
+                    }
+                }
+            
+                function closePopup(popupId) {
+                    document.getElementById(popupId).style.display = 'none';
+                }
+            
+                // Kandy
                 document.querySelectorAll('.image-container img').forEach(image =>{
-                    image.onclick=()=>{
-                    document.querySelector('.popup-image').style.display='block';
-                    document.querySelector('.popup-image img').src = image.getAttribute('src')
+                image.onclick=()=>{
+                document.querySelector('.popup-image').style.display='block';
+                document.querySelector('.popup-image img').src = image.getAttribute('src')
                 }
                 });
 
                 document.querySelector('.popup-image span').onclick = ()=>{
-                    document.querySelector('.popup-image').style.display='none';
+                document.querySelector('.popup-image').style.display='none';
                 }
+            
+                // Ella
+                document.querySelectorAll('.image-container2 img').forEach(image => {
+                image.onclick = () => {
+                document.querySelector('#ellaPopup').style.display = 'block';
+                document.querySelector('#ellaSlide').src = image.getAttribute('src');
+                }
+                });
 
             </script>
-
+            
         </section> <!--Gallery-->
 
         <section id="aboutus">
