@@ -124,7 +124,7 @@ body{
 .tourPlan h1{
     background-color: #92A811;
     text-align: center;
-    padding: 20px;
+    padding: 10px;
     color:whitesmoke;
 }
 
@@ -205,7 +205,7 @@ body{
 .booking-header h1{
     background-color: #92A811;
     text-align: center;
-    padding: 20px;
+    padding: 10px;
     color:whitesmoke;
 }
 
@@ -315,7 +315,7 @@ body{
 .gallery-content h1{
     background-color: #92A811;
     text-align: center;
-    padding: 20px;
+    padding: 10px;
     color:whitesmoke;
 }
 
@@ -470,19 +470,19 @@ div.popup-image button:last-of-type {
 
 
 .aboutus-header{
-    margin-top: 30px;
+    margin-top: 20px;
    background-image: linear-gradient(to right, rgba(104, 149, 184, 0.758), rgb(232, 227, 227));
 }
 
 .aboutus-header h1{
     background-color:#92A811;
     text-align: center;
-    padding: 20px;
+    padding: 10px;
     color:whitesmoke;
 }
 
 .aboutUs-text{
-    margin-left: 20px;
+    margin-left: 30px;
     font-weight: thin;
     font-size: 16px;
     color: black;
