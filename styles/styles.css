@@ -117,6 +117,19 @@ body{
     z-index: -1;
 }
 
+@media (min-aspect-ratio: 16/9) {
+    video {
+      width: 100%;
+      height: auto;
+    }
+  }
+  @media (max-aspect-ratio: 16/9) {
+    video {
+      width: auto;
+      height: 100%;
+    }
+  }
+
 .tourPlan{
     background-image: linear-gradient(to right, rgba(136, 157, 186, 0.758), rgb(232, 227, 227));
 }
@@ -530,8 +543,8 @@ div.popup-image button:last-of-type {
   .newsletter-form input[type="submit"] {
     width: 100%;
     padding: 10px;
-    background-color: #4CAF50;
-    color: white;
+    background-color: #FFC107;
+    color: #212529;
     border: none;
     cursor: pointer;
   }
