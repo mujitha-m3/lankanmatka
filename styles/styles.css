@@ -237,8 +237,8 @@ body{
 }
 
 .booking-form button {
-    background-color: #007bff;
-    color: #fff;
+    background-color: #ffc107;
+    color: #212529;
     padding: 10px 20px;
     border: none;
     border-radius: 5px;
@@ -551,8 +551,8 @@ div.popup-image button:last-of-type {
 }
 
 .btn-footer-book {
-    background-color: #4CAF50;
-    color: #fff;
+    background-color: #FFC107;
+    color: #212529;
     border: none;
     padding: 10px 20px;
     text-align: center;
