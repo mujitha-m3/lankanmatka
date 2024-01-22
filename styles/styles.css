@@ -125,6 +125,7 @@ body{
     background-color: #92A811;
     text-align: center;
     padding: 20px;
+    color:whitesmoke;
 }
 
 .popup .overlay{
@@ -205,6 +206,7 @@ body{
     background-color: #92A811;
     text-align: center;
     padding: 20px;
+    color:whitesmoke;
 }
 
 .booking-form form {
@@ -296,6 +298,7 @@ body{
     background-color: #92A811;
     text-align: center;
     padding: 20px;
+    color:whitesmoke;
 }
 
 .gallery-header{
@@ -306,12 +309,14 @@ body{
     background-color: #92A811;
     text-align: center;
     padding: 20px;
+    color:whitesmoke;
 }
 
 .gallery-content h1{
     background-color: #92A811;
     text-align: center;
     padding: 20px;
+    color:whitesmoke;
 }
 
 .gallery-header .image-container{
@@ -470,9 +475,10 @@ div.popup-image button:last-of-type {
 }
 
 .aboutus-header h1{
-    background-color: #6CB7E1;
+    background-color:#92A811;
     text-align: center;
     padding: 20px;
+    color:whitesmoke;
 }
 
 .aboutUs-text{
