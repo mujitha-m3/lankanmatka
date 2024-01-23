@@ -317,6 +317,9 @@ body{
 
 .gallery-header{
     background-image: linear-gradient(to right, rgba(136, 157, 186, 0.758), rgb(232, 227, 227));
+    height: 100vh; /* Set the height to cover the full viewport height */
+    margin: 0; /* Remove any default margin */
+    padding: 0;
 }
 
 .gallery-header h1{
@@ -631,10 +634,338 @@ body{
     object-fit: cover;
 }
 
-@media (max-width:768px){
-    .gallery-header .popup-image img{
-    width: 95%;
+@media (max-width:767px){
+.gallery-header .image-container
+{
+    display: flex;
+    width: 540px;
+    height: 175px;
+    flex-wrap: wrap;
+    gap: 1px;
+    justify-content: center;
+    padding: 0px;
+    margin-left: -5px;
 }
+.gallery-header .image-container2
+{
+    display: flex;
+    width: 540px;
+    height: 175px;
+    flex-wrap: wrap;
+    gap: 1px;
+    justify-content: center;
+    padding: 0px;
+    /*border: 2px solid #ddd;*/
+    margin-left: -6px;
+}
+.gallery-header .image-container3
+{
+    display: flex;
+    width: 540px;
+    height: 175px;
+    flex-wrap: wrap;
+    gap: 1px;
+    justify-content: center;
+    padding: 0px;
+    margin-left: -6px;
+    /*border: 2px solid #ddd;*/
+}
+.gallery-header .image-container4
+{
+    display: flex;
+    width: 540px;
+    height: 175px;
+    flex-wrap: wrap;
+    gap: 1px;
+    justify-content: center;
+    padding: 0px;
+    margin-left: -6px;
+    /*border: 2px solid #ddd;*/
+}
+.gallery-header .image-container5
+{
+    display: flex;
+    width: 540px;
+    height: 175px;
+    flex-wrap: wrap;
+    gap: 1px;
+    justify-content: center;
+    padding: 0px;
+    margin-left: -6px;
+    margin-top: 0px;
+    /*border: 2px solid #ddd;*/
+}
+.gallery-header .image-container6
+{
+    display: flex;
+    width: 540px;
+    height: 175px;
+    flex-wrap: wrap;
+    gap: 1px;
+    justify-content: center;
+    padding: 0px;
+    margin-left: -6px;
+    margin-top: 0px;
+    /*border: 2px solid #ddd;*/
+}
+.gallery-header .image-container7
+{
+    display: flex;
+    width: 540px;
+    height: 175px;
+    flex-wrap: wrap;
+    gap: 1px;
+    justify-content: center;
+    padding: 0px;
+    margin-left: -6px;
+    margin-top: 0px;
+    /*border: 2px solid #ddd;*/
+}
+.gallery-header .image-container8{
+    display: flex;
+    width: 540px;
+    height: 175px;
+    flex-wrap: wrap;
+    gap: 1px;
+    justify-content: center;
+    padding: 0px;
+    margin-left: -6px;
+    margin-top: 0px;
+    /*border: 2px solid #ddd;*/
+}
+
+.gallery-header .image-container .image
+{
+    height: 90px;
+    width: 70px;
+    border: 5px solid #fff;
+    box-shadow: 0 5px 15px  rgba(0,0,0,.1);
+    overflow: hidden;
+    cursor: pointer;
+}
+.gallery-header .image-container2 .image
+{
+    height: 90px;
+    width: 70px;
+    border: 5px solid #fff;
+    box-shadow: 0 5px 15px  rgba(0,0,0,.1);
+    overflow: hidden;
+    cursor: pointer;
+}
+.gallery-header .image-container3 .image
+{
+    height: 90px;
+    width: 70px;
+    border: 5px solid #fff;
+    box-shadow: 0 5px 15px  rgba(0,0,0,.1);
+    overflow: hidden;
+    cursor: pointer;
+}
+.gallery-header .image-container4 .image
+{
+    height: 90px;
+    width: 70px;
+    border: 5px solid #fff;
+    box-shadow: 0 5px 15px  rgba(0,0,0,.1);
+    overflow: hidden;
+    cursor: pointer;
+}
+.gallery-header .image-container5 .image
+{
+    height: 90px;
+    width: 70px;
+    border: 5px solid #fff;
+    box-shadow: 0 5px 15px  rgba(0,0,0,.1);
+    overflow: hidden;
+    cursor: pointer;
+}
+.gallery-header .image-container6 .image
+{
+    height: 90px;
+    width: 70px;
+    border: 5px solid #fff;
+    box-shadow: 0 5px 15px  rgba(0,0,0,.1);
+    overflow: hidden;
+    cursor: pointer;
+}
+.gallery-header .image-container7 .image
+{
+    height: 90px;
+    width: 70px;
+    border: 5px solid #fff;
+    box-shadow: 0 5px 15px  rgba(0,0,0,.1);
+    overflow: hidden;
+    cursor: pointer;
+}
+.gallery-header .image-container8 .image{
+    height: 90px;
+    width: 70px;
+    border: 5px solid #fff;
+    box-shadow: 0 5px 15px  rgba(0,0,0,.1);
+    overflow: hidden;
+    cursor: pointer;
+}
+
+.gallery-header .image-container .image img{
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+    transition: .2s linear;
+}
+
+.gallery-header .image-container2 .image img{
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+    transition: .2s linear;
+}
+
+.gallery-header .image-container3 .image img{
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+    transition: .2s linear;
+}
+
+.gallery-header .image-container4 .image img{
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+    transition: .2s linear;
+}
+
+.gallery-header .image-container5 .image img{
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+    transition: .2s linear;
+}
+
+.gallery-header .image-container6 .image img{
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+    transition: .2s linear;
+}
+
+.gallery-header .image-container7 .image img{
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+    transition: .2s linear;
+}
+
+.gallery-header .image-container8 .image img{
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+    transition: .2s linear;
+}
+
+.gallery-header .image-container .image:hover img{
+    transform: scale(1.1);
+}
+
+.gallery-header .image-container2 .image:hover img{
+    transform: scale(1.1);
+}
+
+.gallery-header .image-container3 .image:hover img{
+    transform: scale(1.1);
+}
+
+.gallery-header .image-container4 .image:hover img{
+    transform: scale(1.1);
+}
+
+.gallery-header .image-container5 .image:hover img{
+    transform: scale(1.1);
+}
+
+.gallery-header .image-container6 .image:hover img{
+    transform: scale(1.1);
+}
+
+.gallery-header .image-container7 .image:hover img{
+    transform: scale(1.1);
+}
+
+.gallery-header .image-container8 .image:hover img{
+    transform: scale(1.1);
+}
+
+.gallery-header .popup-image{
+    position: fixed;
+    top: 0; left: 0;
+    background: rgba(0,0,0,.9);
+    height: 100%;
+    width: 100%;
+    z-index: 100;
+    display: none;
+
+}
+
+.gallery-header .popup-image span{
+    position: absolute;
+    top: 1; right: 24px;
+    font-size: 40px;
+    font-weight: bolder;
+    color: #fff;
+    cursor: pointer;
+    z-index: 100;
+    
+}
+
+.gallery-header .popup-image img{
+    position: absolute;
+    top: 50%; left: 50%;
+    transform: translate(-50%,-50%);
+    border: 5px solid #fff;
+    border-radius: 5px;
+    width: 450px;
+    object-fit: cover;
+}
+
+div.popup-image button:first-of-type {
+    float: left;
+    margin-top: 300px;
+    position: absolute;
+    top: 0; right: 410px;
+    z-index: 100;
+}
+
+div.popup-image button:last-of-type {
+    float: right;
+    margin-top: 300px; /* Adjust the margin value as needed */
+    position: absolute;
+    top: 0; left: 410px;
+    z-index: 100;
+}
+
+.gallery-header .image-container3 h4 {
+    margin-left: 58px;
+}
+
+.gallery-header .image-container4 h4 {
+    margin-left: 58px;
+}
+
+.gallery-header .image-container5 h4 {
+    margin-left: 58px;
+}
+
+.gallery-header .image-container6 h4 {
+    margin-left: 58px;
+}
+
+.gallery-header .image-container7 h4 {
+    margin-left: 58px;
+}
+
+.gallery-header .image-container8 h4 {
+    margin-left: 58px;
+}
+
 }
 
 div.popup-image button:first-of-type {
@@ -652,7 +983,7 @@ div.popup-image button:last-of-type {
 
 
 .aboutus-header{
-    margin-top: 50px;
+
    background-image: linear-gradient(to right, rgba(104, 149, 184, 0.758), rgb(232, 227, 227));
 }
 
@@ -661,6 +992,7 @@ div.popup-image button:last-of-type {
     text-align: center;
     padding: 10px;
     color:whitesmoke;
+    margin-top: 56px;
 }
 
 .aboutUs-text{
