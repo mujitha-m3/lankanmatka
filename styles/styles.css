@@ -447,7 +447,7 @@ nav li:first-child{
 
 .gallery-header{
     background-image: linear-gradient(to right, rgba(136, 157, 186, 0.758), rgb(232, 227, 227));
-    height: 100vh; 
+    height: 110vh; 
     margin: 0; 
     padding: 0;
 }
@@ -1146,6 +1146,7 @@ div.popup-image button:last-of-type {
 
 .newsletter-header{
     background: #6C8DE1;
+    margin-top: -20px;
 }
 
 .newsletter-header h1{
