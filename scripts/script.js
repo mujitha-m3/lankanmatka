@@ -11,12 +11,12 @@ var kandyImages = ["assets/images/kandy/temple-of-the-sacred.jpg",
     "assets/images/kandy/istockphoto-169941463-612x612.jpg",
     "assets/images/kandy/Temple-Sacred-Tooth-Relic-kandy-sri-lanka.jpg",
     "assets/images/kandy/maxresdefault.jpg"];
-var ellaImages = ["assets/images/Ella/download (1).jpg",
-    "assets/images/Ella/download.jpg",
-    "assets/images/Ella/images (1).jpg",
-    "assets/images/Ella/images (2).jpg",
-    "assets/images/Ella/images (3).jpg",
-    "assets/images/Ella/images.jpg"];
+var ellaImages = ["assets/images/Ella/ella1.jpg",
+    "assets/images/Ella/ella2.jpg",
+    "assets/images/Ella/ella3.jpg",
+    "assets/images/Ella/ella4.jpg",
+    "assets/images/Ella/ella5.jpg",
+    "assets/images/Ella/ella6.jpg"];
 
 function mySlide(param, album) {
     var currentIndex, images;
