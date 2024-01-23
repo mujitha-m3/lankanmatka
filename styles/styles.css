@@ -1,8 +1,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@700&display=swap');
 
 * {
-    box-sizing: border-box;
-    font-family: 'Nunito Sans', sans-serif;
+    font-family: 'AR One Sans', sans-serif;
 }
 
 body{
@@ -88,6 +87,11 @@ body{
     /* background: rgb(255, 255, 255, 0.3); */
 }
 
+.textOnVideo {
+    color: white;
+    text-align: center;
+}
+
 .section h3{
     text-align: center;
     color: white;
@@ -115,6 +119,7 @@ body{
     min-width: 100%;
     min-height: 100%;
     z-index: -1;
+    object-fit: cover;
 }
 
 @media (min-aspect-ratio: 16/9) {
@@ -130,8 +135,23 @@ body{
     }
   }
 
+  @media (max-width: 767px) {
+    .section {
+        height: auto;
+        padding: 20px;
+    }
+
+    .textOnVideo {
+        margin-bottom: 20px;
+    }
+}
+
 .tourPlan{
     background-image: linear-gradient(to right, rgba(136, 157, 186, 0.758), rgb(232, 227, 227));
+}
+
+.card {
+    width: 100%;
 }
 
 .tourPlan h1{
@@ -140,6 +160,17 @@ body{
     padding: 10px;
     color:whitesmoke;
     font-family: 'Nunito Sans', sans-serif;
+}
+
+@media (max-width: 767px) {
+    .tourPlan h1 {
+        font-size: 24px;
+    }
+
+    .card {
+        width: 100%;
+        margin: 10px 0;
+    }
 }
 
 .popup .overlay{
@@ -297,8 +328,26 @@ body{
 }
 
 @media (max-width: 767px) {
+    .booking-header h1 {
+        font-size: 24px;
+    }
+
     .booking-form form {
         padding: 15px;
+        width: 300px;
+        text-align: center;
+        float: center;
+    }
+
+    .booking-form{
+        text-align: center;
+        margin-right: 25px;
+    }
+
+    .booking-text h2,
+    .booking-text h3,
+    .booking-text h4 {
+        font-size: 16px;
     }
 }
 
