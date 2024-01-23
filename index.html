@@ -10,6 +10,7 @@
     <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
     <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=AR+One+Sans&display=swap">
     <link rel="stylesheet" href="styles/styles.css" type="text/css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
 </head>
 
 <body>
@@ -17,16 +18,44 @@
         <div class="row">
             <div class="col">
                 <header class="header">
+                    
                     <a href="" class="logo"><img src="assets/images/logo/logo.png" alt="LankanMatka"></a>
+                    
                     <nav class="navbar navbar-expand-md">
-                        <a href="#home">Home</a>
-                        <a href="#booking">Book</a>
-                        <a href="#plan">Packages</a>
-                        <a href="#services">Services</a>
-                        <a href="#gallery">Gallery</a>
-                        <a href="#footer">Contact Us</a>
-                        <a href=""><i class="fa fa-sign-in" aria-hidden="true"></i>Sign In</a>
+                        <ul class="sidebar">
+                        <li onclick=hideSidebar()><a href="#"><svg xmlns="http://www.w3.org/2000/svg" height="26" viewBox="0 -960 960 960" width="26"><path d="m256-200-56-56 224-224-224-224 56-56 224 224 224-224 56 56-224 224 224 224-56 56-224-224-224 224Z"/></svg></a></li>
+                        <li><a href="#home">Home</a></li>
+                        <li><a href="#booking">Book</a></li>
+                        <li><a href="#plan">Packages</a></li>
+                        <li><a href="#services">Services</a></li>
+                        <li><a href="#gallery">Gallery</a></li>
+                        <li><a href="#footer">Contact Us</a></li>
+                        <li><a href=""><i class="fa fa-sign-in" aria-hidden="true"></i>Sign In</a></li>
+                        </ul>
+                        <ul>
+                        <li class="hideOnMobile"><a href="#home">Home</a></li>
+                        <li class="hideOnMobile"><a href="#booking">Book</a></li>
+                        <li class="hideOnMobile"><a href="#plan">Packages</a></li>
+                        <li class="hideOnMobile"><a href="#services">Services</a></li>
+                        <li class="hideOnMobile"><a href="#gallery">Gallery</a></li>
+                        <li class="hideOnMobile"><a href="#footer">Contact Us</a></li>
+                        <li class="hideOnMobile"><a href=""><i class="fa fa-sign-in" aria-hidden="true"></i>Sign In</a></li>
+                        <li onclick="showSidebar()" class="menu-button"><a href="#"><svg xmlns="http://www.w3.org/2000/svg" height="26" viewBox="0 -960 960 960" width="26"><path d="M120-240v-80h720v80H120Zm0-200v-80h720v80H120Zm0-200v-80h720v80H120Z" fill="#fff"/></svg></a></li>
+                        </ul>
                     </nav>
+
+                    <script>
+                        function showSidebar() {
+                            const sidebar = document.querySelector('.sidebar');
+                            sidebar.style.display = 'flex';
+                        }
+                    
+                        function hideSidebar() {
+                            const sidebar = document.querySelector('.sidebar');
+                            sidebar.style.display = 'none';
+                        }
+                        
+                    </script>
                 </header>
             </div>
         </div>
@@ -228,7 +257,7 @@
                 </div>
                 <div class="container service mt-2 text-left">
                     <div class="row">
-                        <div class="col-md-6 service-text align-middle">
+                        <div class="col-md-6 service-text align-middle mb-5">
                             <!--<h1>image here</h1> -->
                             <img class="img-thumbnail" src="assets/images/services/service_Hotels.jpg"
                                 alt="The picture portrays the hotel's swimming pool area, surrounded by both the calming expanse of the sea and lush greenery. Comfortable loungers invite guests to relax in this harmonious blend of coastal tranquility and natural beauty">
@@ -246,12 +275,7 @@
                         </div>
                     </div>
                     <div class="row">
-                        <div class="col">
-                            <br>
-                        </div>
-                    </div>
-                    <div class="row">
-                        <div class="col-md-6 service-text">
+                        <div class="col-md-6 service-text mt-3">
                             <h2>Food & Drinks!</h2>
                             <p>As your travel organizer, we offer more than just a meal – it's a journey into the heart
                                 of Sri Lankan culinary heritage. Each dish has a story to tell,
@@ -265,7 +289,7 @@
                                 where every meal becomes a part of your unforgettable journey.</p>
                         </div>
                         <div class="col-md-6 service-text text-left align-middle">
-                            <img class="img-thumbnail"
+                            <img class="img-thumbnail rounded-pill shadow"
                                 src="assets/images/services/services_Food&Drinks.jpeg"
                                 alt="The image showcases a delectable spread of traditional dishes, featuring a colorful array of aromatic curries, flavorful rice, and tantalizing spices. Experience the rich culinary heritage of Sri Lanka through this visually enticing snapshot.">
                         </div>
@@ -277,11 +301,11 @@
                     </div>
                     <div class="row">
                         <div class="col-md-6 service-text align-middle align-middle">
-                            <img class="img-thumbnail"
+                            <img class="img-thumbnail rounded-pill shadow"
                                 src="assets/images/services/service_Adventure.jpg"
                                 alt="Captivating image of Sri Lankan landscapes during an invigorating hiking adventure, showcasing the natural beauty and scenic trails awaiting exploration.">
                         </div>
-                        <div class="col-md-6 service-text text-left">
+                        <div class="col-md-6 service-text text-left mt-3">
                             <h2>Adventures & Hiking!</h2>
                             <p>Embark on an exciting Adventure Hiking experience with us as we guide you through the
                                 stunning landscapes of Sri Lanka.
@@ -302,12 +326,7 @@
                         </div>
                     </div>
                     <div class="row">
-                        <div class="col">
-                            <br>
-                        </div>
-                    </div>
-                    <div class="row">
-                        <div class="col-md-6 service-text">
+                        <div class="col-md-6 service-text mt-3">
                             <h2>Ayurvedapa & Treatments!</h2>
                             <p>Experience pure relaxation and wellness with our Ayurvedic Spa and Treatment services in
                                 beautiful Sri Lanka. Engage yourself in ancient healing practices that bring harmony to
@@ -321,13 +340,8 @@
                                 your visit to Sri Lanka.</p>
                         </div>
                         <div class="col-md-6 service-text text-left align-middle">
-                            <img class="img-thumbnail"
+                            <img class="img-thumbnail rounded-pill shadow"
                                 src="assets/images/services/service_Ayurvedapa&Treatments.jpg" alt="">
-                        </div>
-                    </div>
-                    <div class="row">
-                        <div class="col">
-                            <br>
                         </div>
                     </div>
                 </div>
