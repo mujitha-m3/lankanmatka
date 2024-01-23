@@ -128,6 +128,7 @@ body{
       height: auto;
     }
   }
+
   @media (max-aspect-ratio: 16/9) {
     video {
       width: auto;
@@ -140,9 +141,28 @@ body{
         height: auto;
         padding: 20px;
     }
-
     .textOnVideo {
         margin-bottom: 20px;
+    }
+
+    .textOnVideo h1,
+    .textOnVideo h3 {
+        font-size: 16px;
+    }
+
+    .logo img{
+        visibility: hidden;
+    }
+
+    .newsletter-image-left,
+    .newsletter-image-right{
+        visibility: hidden;
+    }
+
+    .copyright,
+    .privacy {
+        font-size: 12px;
+        text-align: center;
     }
 }
 
@@ -150,8 +170,8 @@ body{
     background-image: linear-gradient(to right, rgba(136, 157, 186, 0.758), rgb(232, 227, 227));
 }
 
-.card {
-    width: 100%;
+.tourPlanCards {
+    margin-left: 0px;
 }
 
 .tourPlan h1{
@@ -215,7 +235,6 @@ body{
     line-height: 30px;
     text-align: center;
     border-radius: 50%;
-
 }
 
 .popup.active .overlay{
