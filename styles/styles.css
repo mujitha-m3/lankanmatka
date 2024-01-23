@@ -226,9 +226,10 @@ nav li:first-child{
 
     .booking-form form {
         padding: 15px;
-        width: 300px;
+        width: 200px;
         text-align: center;
         float: center;
+        margin-right: -12px;
     }
 
     .booking-form{
