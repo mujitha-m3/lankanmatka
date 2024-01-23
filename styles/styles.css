@@ -109,7 +109,7 @@ body{
 .section h1{
     text-align: center;
     font-size: 30px;
-    font-family: 'Nunito Sans', sans-serif;
+    font-family: 'AR One Sans', sans-serif;
     z-index: 1;
     color: white;
     /* background: rgb(255, 255, 255, 0.3); */
@@ -123,7 +123,7 @@ body{
 .section h3{
     text-align: center;
     color: white;
-    font-family: 'Nunito Sans', sans-serif;
+    font-family: 'AR One Sans', sans-serif;
     z-index: 1;
     /* background: rgb(255, 255, 255, 0.3); */
 }
@@ -207,7 +207,7 @@ body{
     text-align: center;
     padding: 10px;
     color:whitesmoke;
-    font-family: 'Nunito Sans', sans-serif;
+    font-family: 'AR One Sans', sans-serif;
 }
 
 @media (max-width: 767px) {
@@ -424,8 +424,8 @@ body{
 
 .gallery-header{
     background-image: linear-gradient(to right, rgba(136, 157, 186, 0.758), rgb(232, 227, 227));
-    height: 100vh; /* Set the height to cover the full viewport height */
-    margin: 0; /* Remove any default margin */
+    height: 100vh; 
+    margin: 0; 
     padding: 0;
 }
 
