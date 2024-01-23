@@ -239,9 +239,7 @@ nav li:first-child{
     .booking-text h2,
     .booking-text h3,
     .booking-text h4 {
-        font-size: 25px;
-        text-align: center;
-        background: rgba(255, 255, 255, 0.5);
+        font-size: 16px;
     }
     .newsletter{
         margin-top: 250px;
@@ -776,14 +774,7 @@ nav li:first-child{
 
 @media (max-width:767px){
 
-.gallery-header{
-    background-color: white;
-    height: 10vh; 
-    margin: 0; 
-    padding: 0;
-    }
-
-
+    
 .gallery-header .image-container
 {
     display: flex;
