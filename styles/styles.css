@@ -94,20 +94,6 @@ nav li:first-child{
     display: none;
 }
 
-@media (max-width: 768px) {
-
-    .hideOnMobile{
-        display: none;
-    }
-
-    .menu-button{
-        display: block;
-        margin-top: -95px;
-        margin-left: 45px;
-    }
-
-}
-
 .card-img-top {
     width: 100%;
     height: 200px; 
@@ -214,6 +200,47 @@ nav li:first-child{
         font-size: 12px;
         text-align: center;
     }
+
+    .hideOnMobile{
+        display: none;
+    }
+
+    .menu-button{
+        display: block;
+        margin-top: -95px;
+        margin-left: 45px;
+    }
+
+    .tourPlan h1 {
+        font-size: 24px;
+    }
+
+    .card {
+        width: 100%;
+        margin: 10px 0;
+    }
+
+    .booking-header h1 {
+        font-size: 24px;
+    }
+
+    .booking-form form {
+        padding: 15px;
+        width: 300px;
+        text-align: center;
+        float: center;
+    }
+
+    .booking-form{
+        text-align: center;
+        margin-right: 25px;
+    }
+
+    .booking-text h2,
+    .booking-text h3,
+    .booking-text h4 {
+        font-size: 16px;
+    }
 }
 
 .tourPlan{
@@ -232,16 +259,6 @@ nav li:first-child{
     font-family: 'AR One Sans', sans-serif;
 }
 
-@media (max-width: 767px) {
-    .tourPlan h1 {
-        font-size: 24px;
-    }
-
-    .card {
-        width: 100%;
-        margin: 10px 0;
-    }
-}
 
 .popup .overlay{
     position: fixed;
@@ -397,29 +414,6 @@ nav li:first-child{
     border-radius: 5%;
 }
 
-@media (max-width: 767px) {
-    .booking-header h1 {
-        font-size: 24px;
-    }
-
-    .booking-form form {
-        padding: 15px;
-        width: 300px;
-        text-align: center;
-        float: center;
-    }
-
-    .booking-form{
-        text-align: center;
-        margin-right: 25px;
-    }
-
-    .booking-text h2,
-    .booking-text h3,
-    .booking-text h4 {
-        font-size: 16px;
-    }
-}
 
 .service-header{
     /*background: #969cac;*/
