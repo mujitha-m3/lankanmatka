@@ -248,7 +248,7 @@ body{
 
 .popup .content button {
     display: block;
-    margin-top: 20px; 
+    margin-top: -20px; 
     margin-left: auto; 
 }
 
