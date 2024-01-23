@@ -535,6 +535,10 @@ body{
     cursor: pointer;
 }
 
+.gallery-header .image-container6 h4 {
+    white-space: nowrap;
+}
+
 .gallery-header .image-container7{
     display: flex;
     width: 340px;
@@ -555,6 +559,10 @@ body{
     box-shadow: 0 5px 15px  rgba(0,0,0,.1);
     overflow: hidden;
     cursor: pointer;
+}
+
+.gallery-header .image-container7 h4 {
+    white-space: nowrap;
 }
 
 .gallery-header .image-container8{
@@ -579,6 +587,9 @@ body{
     cursor: pointer;
 }
 
+.gallery-header .image-container8 h4 {
+    white-space: nowrap;
+}
 
 .gallery-header .image-container .image img{
     height: 100%;
