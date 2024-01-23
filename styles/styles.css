@@ -1076,7 +1076,7 @@ div.popup-image button:first-of-type {
 
 div.popup-image button:last-of-type {
     float: right;
-    margin-top: 300px; /* Adjust the margin value as needed */
+    margin-top: 300px; 
     position: absolute;
     top: 0; left: 410px;
     z-index: 100;
@@ -1110,13 +1110,13 @@ div.popup-image button:last-of-type {
 
 div.popup-image button:first-of-type {
     float: left;
-    margin-top: 300px; /* Adjust the margin value as needed */
+    margin-top: 300px; 
     margin-left: 28%;
 }
 
 div.popup-image button:last-of-type {
     float: right;
-    margin-top: 300px; /* Adjust the margin value as needed */
+    margin-top: 300px; 
     margin-right: 28%;
 }
 
