@@ -1171,6 +1171,12 @@ div.popup-image button:last-of-type {
     background-color: #45a049;
   }
 
+  .newsletter-image-left img,
+  .newsletter-image-right img {
+    width: 300px;
+    height: 300px;
+  }
+
 .footer {
     background-color: #333;
     color: #fff;
