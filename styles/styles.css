@@ -776,6 +776,15 @@ nav li:first-child{
 }
 
 @media (max-width:767px){
+
+.gallery-header{
+    background-color: white;
+    height: 10vh; 
+    margin: 0; 
+    padding: 0;
+    }
+
+
 .gallery-header .image-container
 {
     display: flex;
@@ -1200,6 +1209,8 @@ div.popup-image button:last-of-type {
     width: 300px;
     height: 300px;
   }
+
+
 
 .footer {
     background-color: #333;
