@@ -241,6 +241,9 @@ nav li:first-child{
     .booking-text h4 {
         font-size: 16px;
     }
+    .newsletter{
+        margin-top: 250px;
+    }
 }
 
 .tourPlan{
@@ -1154,6 +1157,8 @@ div.popup-image button:last-of-type {
     margin: 0;
     margin-right: 0;
 }
+
+
 
 .newsletter-form {
     margin: 0 auto;
