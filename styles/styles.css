@@ -391,9 +391,7 @@ nav li:first-child{
     cursor: pointer;
 }
 
-.booking-form button:hover {
-    background-color: #0056b3;
-}
+
 
 .booking-form button, .booking-form input[type="reset"] {
     margin-right: 10px;
