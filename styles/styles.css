@@ -1229,19 +1229,15 @@ div.popup-image button:last-of-type {
     box-sizing: border-box;
   }
   
-  .newsletter-form input[type="submit"] {
+  .newsletter-form input[type="button"] {
     width: 100%;
     padding: 10px;
-    background-color: #FFC107;
-    color: #212529;
+    border-radius: 0px;
     border: none;
     cursor: pointer;
   }
-  
-  .newsletter-form input[type="submit"]:hover {
-    background-color: #45a049;
-  }
 
+  
   .newsletter-image-left img,
   .newsletter-image-right img {
     width: 300px;
@@ -1274,9 +1270,7 @@ div.popup-image button:last-of-type {
     border-radius: 5px;
 }
 
-.btn-footer-book:hover {
-    background-color: #45a049;
-}
+
 
 .footer p {
     font-size: 14px;
